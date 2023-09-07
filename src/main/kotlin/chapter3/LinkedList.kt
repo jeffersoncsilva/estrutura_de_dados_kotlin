@@ -175,7 +175,7 @@ fun <T> LinkedList<T>.printReverse() {
 }
 
 fun <T> LinkedList<T>.middle(): T? {
-    if(this.size == 0)
+    if(this.isEmpty())
         return null
     var size = this.size / 2
     return this.nodeAt(size)!!.value
